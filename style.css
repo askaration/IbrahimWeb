@@ -1,0 +1,288 @@
+/* importing fonts and characters from google */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Inconsolata&family=Lalezar&family=Orbitron:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Quantico&family=Righteous&display=swap');
+/* fonts ends here*/
+
+html{
+  background-image: url("https://imgur.com/mtDhQpT.jpg");
+  width: auto;
+  height: auto;
+  background-size: fit;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -100;
+}
+
+/* Code starts here */
+.main-menu{
+  padding: 0px 0px 18px 0px;
+  border-bottom: 1px solid white;
+}
+
+.main-menu > li > a{
+  text-decoration: none;
+  color: white;
+}
+
+/* the home link */
+.main-menu > li:nth-of-type(1){
+  font-family:'Cabin Sketch', cursive;
+  text-align: center;
+  font-size: 27px;
+  left: 0;
+  padding: 0px 0px 0px 40px;
+}
+/* cv link */
+.main-menu > li:nth-of-type(2){
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  left: 45%;
+  
+  
+  
+}
+.main-menu > li:nth-of-type(3){
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  left: 50%;
+  
+}
+
+
+
+.main-menu > li{
+  display: inline-block;
+  position: relative;
+  top: 18px;
+}
+
+/* background */
+
+
+/* .background > img{
+  position: fixed;
+  display: block;
+  left: 33.5%;
+  z-index: -100;
+} */
+
+
+
+/* .layer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  opacity: 0.8;
+  z-index: -50;
+  
+}
+ */
+/* slideshow */
+
+/* first, I hide all the slides */
+.intro > .intro-slides > .intro-slide{
+  display: none;
+}
+
+/* showing the selected slide */
+
+.intro > .intro-slides > input:checked + label + .intro-slide{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* hiding radio buttons */
+
+.intro > .intro-slides > input{
+  display: none;
+}
+
+/* setting up labels */
+.intro > .intro-slides > label{
+  display: block;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: 16px;
+  z-index: 500;
+  color: grey;
+  background-color: black;
+}
+
+/* highlighting selected slide */
+
+.intro > .intro-slides > input:checked + label {
+  background-color: #92bee8;
+}
+
+/* lining up the labels (radio buttons) next to one another */
+
+.intro > .intro-slides > label:nth-of-type(1){
+  left: 45%;
+}
+
+.intro > .intro-slides > label:nth-of-type(2){
+  left: 50%;
+}
+
+.intro > .intro-slides > label:nth-of-type(3){
+  left: 55%;
+}
+
+.intro > .intro-slides > .intro-slide > *{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 150px;
+  padding: 20px 0px 0px 0px;
+  color: black;
+  text-align: center;
+  width: 60%;
+}
+
+/* adding alayer undern each slide */
+
+.slide-layer {
+  width: 80%;
+  height: 71%;
+  position: absolute;
+  top: 34%;
+  left:12%;
+  background-color: white;
+  opacity: 0.15;
+  z-index: 100;
+
+  
+}
+
+.intro > .intro-slides > .intro-slide > span{
+  font-size: 180%;
+  font-weight: bold;
+  font-family: 'Righteous', cursive;
+}
+
+.intro > .intro-slides > .intro-slide > p{
+  font-size: 140%;
+  font-family: 'Righteous', cursive;
+}
+
+/* contact info */
+.info{
+  position: relative;
+  font-family: 'Quantico', sans-serif;
+  font-size: 110%;
+  color: white;
+  display: inline-block;
+  padding: 300px 0px 1px 0px;
+  bottom: -20px;
+  
+}
+.info > .email > span:first-child{
+  font-family: 'material icons';
+}
+
+.info > .phone > span:first-child{
+  font-family: 'material icons';
+}
+
+/* social media */
+.social-media{
+  display: inline-block;
+  position: relative;
+  width: 9%;
+  left: 70%;
+  padding: 300px 0px 1px 0px;
+  bottom: -25px;
+}
+.social-media > li{
+  display: inline-block;
+  position: relative;
+}
+
+.social-media > li > a{
+  text-decoration: none;
+}
+
+/* working on social media icons, sizing and positioning */
+.social-media > .twitter > a > img{
+  width: 23px;
+  
+}
+.social-media > .instagram > a > img{
+  width: 23px;
+  
+}
+
+.social-media > .snapchat > a > img{
+  width: 23px;
+  
+}
+
+
+/* copyright statement */
+.copr{
+  padding: 15px 0px 50px 0px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  display: block;
+}
+
+
+
+
+/* making it responsive */
+@media all and  (max-width: 800px) {
+  
+/*   making the background image fit the entire page */
+  html{
+    background-size: cover;
+  }
+  /*   responsive main menu */
+  
+  .main-menu{
+    display: block;
+    position: relative;
+  }
+  
+  .main-menu > li:nth-of-type(1){
+    position: static;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+  }
+  
+  
+/*   making the background image be in the center */
+  .background > img{
+    width: 100%;
+    
+  }
+  
+
+  .intro > .intro-slides > .intro-slide > *{
+    display: block;
+    width: 100%;
+  }
+  
+  .intro > .intro-slides > label{
+    top: 120%;
+    display: block;
+  }
+  
+  
+  .info{
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .social-media{
+    width: 100%;
+    display: block;
+    left: 41%;
+  }
+}
