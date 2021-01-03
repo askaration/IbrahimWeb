@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html style="background-size: cover;"><body><doctype html><!--   main code --><ul class="main-menu" style="padding:0px 0px 18px 0px;border-bottom:1px solid white;display:block;position:relative;">
+<!--       creating a home link --><li style="display:inline-block;position:static;top:18px;font-family:'Cabin Sketch', cursive;text-align:center;font-size:27px;left:0;padding:0px 0px 0px 40px;width:100%;margin:0px 0px 10px 0px;">
+      <a href="https://cdpn.io/mki13/debug/MWaQwZN/vPAKKeoYOqJA" style="text-decoration: none;
+  color: white;"><span>&lt;/&gt;<br>MOUSTAFA IBRAHIM</span></a>
+</li>
+ 
+    <li style="display:inline-block;position:relative;top:18px;font-family:'Orbitron', sans-serif;font-size:15px;left:45%;"><a href="https://cdpn.io/mki13/debug/PoPmdNa/yPkJjKLVgpRk" style="text-decoration: none;
+  color: white;">RESUME</a></li>
+    <li style="display:inline-block;position:relative;top:18px;font-family:'Orbitron', sans-serif;font-size:15px;left:50%;"><a href="https://cdpn.io/mki13/debug/WNQZWjM/bYAdyXmLxZvk" style="text-decoration: none;
+  color: white;">PHOTOS</a></li>
+  </ul>
+<!--   page content here --><!--   background stuff --><div class="background">
+<!--   <img src="https://imgur.com/mtDhQpT.jpg" alt="background">
+   <div class="layer"></div> -->
+  </div>
+ 
+ 
+ 
+<!--   creating a slideshow as an intro -->
+  <div class="intro">
+  <div class="intro-slides">
+    <!-- slide #1     -->
+    <label for="is1" style="display:block;width:8px;height:8px;position:absolute;bottom:16px;z-index:500;color:grey;background-color:black;top:120%;left:45%;"></label>
+ 
+ 
+ 
+<!--     slide #2 -->
+    <label for="is2" style="display:block;width:8px;height:8px;position:absolute;bottom:16px;z-index:500;color:grey;background-color:black;top:120%;left:50%;"></label>
+ 
+ 
+<!--     slide #3 -->
+    <label for="is3" style="display:block;width:8px;height:8px;position:absolute;bottom:16px;z-index:500;color:grey;background-color:black;top:120%;left:55%;"></label>
+ 
+ 
+    <div class="slide-layer" style="width: 80%;
+  height: 71%;
+  position: absolute;
+  top: 34%;
+  left:12%;
+  background-color: white;
+  opacity: 0.15;
+  z-index: 100;"></div>
+  </div>
+ 
+<!-- contact info -->
+    <div class="info" style="position:relative;font-family:'Quantico', sans-serif;font-size:110%;color:white;display:block;padding:300px 0px 1px 0px;bottom:-20px;text-align:center;width:100%;">
+      <div class="email">
+        <span class="material_icons">email</span>
+        <span>mous.askar@gmail.com</span>
+      </div>
+     <div class="phone">
+      <span class="material_icons">call</span>
+      <span>+1(732)540-0438</span>
+     </div>
+    </div>
+ 
+<div class="social-media" style="display:block;position:relative;width:100%;left:41%;padding:300px 0px 1px 0px;bottom:-25px;">
+  <li class="twitter" style="display: inline-block;
+  position: relative;"><a href="https://twitter.com/askaration" target="_blank" style="text-decoration: none;"><img src="https://imgur.com/mtCWla6.jpg" alt="twitter_icon" style="width: 23px;"></a></li>
+ 
+  <li class="instagram" style="display: inline-block;
+  position: relative;"><a href="https://www.instagram.com/askaration/" target="_blank" style="text-decoration: none;"><img src="https://imgur.com/fOcY65I.jpg" alt="insta_icon" style="width: 23px;"></a></li>
+ 
+  <li class="snapchat" style="display: inline-block;
+  position: relative;"><a href="https://www.snapchat.com/add/askarnation" target="_blank" style="text-decoration: none;"><img src="https://imgur.com/yPvRisE.jpg" alt="snap_icon" style="width: 23px;"></a></li>
+ 
+    </div>
+ 
+ 
+<!--   copyrights statment -->
+  <h6 class="copr" style="padding: 15px 0px 50px 0px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  display: block;"> Copyright &copy; 2020 by Moustafa Ibrahim, All rights reserved. </h6>  
+ 
+ 
+</div></doctype></body></html>
