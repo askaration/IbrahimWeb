@@ -4,14 +4,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Inconsolata&family=Lalezar&family=Orbitron:wght@400;500&display=swap');
 
+/* align-items: center; */
+
+/* setting a background */
+*{
+  background-color:black;
+  
+}
+
 .main-menu{
-  padding: 0px 0px 18px 0px;
+  padding: 0px 0px 19px 0px;
   border-bottom: 1px solid lightgrey;
 }
 
 .main-menu > li > a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 /* the home link */
@@ -20,7 +28,7 @@
   text-align: center;
   font-size: 27px;
   left: 0;
-  padding: 0px 0px 0px 35px;
+  padding: 0px 0px 0px 50px;
 }
 /* cv link */
 .main-menu > li:nth-of-type(2){
@@ -45,73 +53,31 @@
   position: relative;
   top: 18px;
 }
-
-/* Working on the main sections style */
-.main-sec > li{
-  display: block;
-  position: absolute;
-  left: 30px;
-  font-weight: bold;
-  color: black;
-  text-transform: uppercase;
-  font-family: 'Lalezar', cursive;
-  font-size:21px;
-/*   add font and its size */
-  
+/*  making a grid */
+.image-list > img{
+  width: 33%;
+  position: static;
+  filter: blur(3px);
+  -webkit-filter: blur(2px);
+  transition: width 3s, height 3s, transform 3s;
 }
-/* working on the sub sections style */
-.sub-sec > li{
-  display: block;
+
+.image-list > img:hover {
   position: relative;
-  left: 24%;
-  font-family: 'Inconsolata', monospace;
-  color: black;
-  
-}
-
-/* going over the sub sections' link by link */
-
-/* edu sec */
-.main-sec > .sub-sec:nth-of-type(1){
-  position: static;
-  margin:50px;
-  padding: 4px;
-}
-
-/* work sec */
-.main-sec > .sub-sec:nth-of-type(2){
-  position: static;  
-  margin: 0px 0px 40px 0px;
-  
-}
-
-/* skills sec */
-.main-sec > .sub-sec:nth-of-type(3){
-  position: static;
-  margin: 0px 0px 40px 0px;
-}
-
-/* just creating a space after the last sec */
-.main-sec > .sub-sec:nth-of-type(4){
-  position: static;
-  margin: 0px 0px 50px 0px;
-}
-
-/* polishing the link in the work sec */
-.sub-sec > li > a{
-  color: #337BFF;
-  text-decoration: none;
+  z-index: 100;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  transform: rotate(360deg);
 }
 
 /* copyright statement */
 .copr{
   padding: 15px 0px 50px 0px;
-  background-color: black;
+  background-color: grey;
   text-align: center;
-  color: white;
+  color: black;
   display: block;
 }
-
 
 /* making it responsive */
 @media all and  (max-width: 800px) {
@@ -128,22 +94,11 @@
     margin: 0px 0px 10px 0px;
   }
   
-
-/* main sections to fit the window size */
-  .main-sec {
-    width: 100%;
-  }
-/*   making the skills sec fit as the window size changes */
-  .main-sec > li:nth-of-type(3){
-    width: 20%;
-  }
-/*   making the awards sec fit */
-  .main-sec > li:nth-of-type(4){
-    width: 20%;
-  }
-
-/* Letting the description or the elements to fit the window size */
-  .sub-sec{
-    width: 60%;
-  }
+/*   responsive image list */
+  .image-list > img{
+  width: 80%;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
 }
