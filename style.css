@@ -221,6 +221,11 @@ html{
   
 }
 
+.social-media > .linkedin > a > img{
+  width: 23px;
+  
+}
+
 
 /* copyright statement */
 .copr{
